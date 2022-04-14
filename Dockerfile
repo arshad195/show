@@ -1,4 +1,4 @@
- FROM ubuntu:18.04
-COPY . /app
-RUN make /app
-CMD python /app/app.py
+ FROM ubuntu:20.10.14
+ mkdir myproject && cd myproject
+ echo "hello" > hello
+ echo -e "FROM busybox\nCOPY /hello /\nRUN cat /hello" > Dockerfile
