@@ -1,4 +1,4 @@
- cd /path/to/python-docker
- pip3 install Flask
- pip3 freeze | grep Flask >> requirements.txt
- touch app.py
+ FROM ubuntu:18.04
+COPY . /app
+RUN make /app
+CMD python /app/app.py
