@@ -7,4 +7,4 @@ RUN apt-get update
 RUN mkdir example
 
 # create an example file
-touch somefile.txt
+
